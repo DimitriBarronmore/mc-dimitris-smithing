@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing_transform",
+  "base": [
+    "minecraft:golden_helmet"
+  ],
+  "addition": [
+    "minecraft:chainmail_helmet"
+  ],
+  "result": {
+    "id": "minecraft:chainmail_helmet"
+  }
+}

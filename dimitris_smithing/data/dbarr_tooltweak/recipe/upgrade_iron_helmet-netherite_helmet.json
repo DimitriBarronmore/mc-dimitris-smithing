@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing_transform",
+  "base": [
+    "minecraft:iron_helmet"
+  ],
+  "addition": [
+    "minecraft:netherite_helmet"
+  ],
+  "result": {
+    "id": "minecraft:netherite_helmet"
+  }
+}

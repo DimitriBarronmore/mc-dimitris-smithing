@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing_transform",
+  "base": [
+    "minecraft:golden_leggings"
+  ],
+  "addition": [
+    "minecraft:chainmail_leggings"
+  ],
+  "result": {
+    "id": "minecraft:chainmail_leggings"
+  }
+}

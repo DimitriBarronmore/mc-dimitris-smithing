@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing_transform",
+  "base": [
+    "minecraft:golden_boots"
+  ],
+  "addition": [
+    "minecraft:iron_boots"
+  ],
+  "result": {
+    "id": "minecraft:iron_boots"
+  }
+}

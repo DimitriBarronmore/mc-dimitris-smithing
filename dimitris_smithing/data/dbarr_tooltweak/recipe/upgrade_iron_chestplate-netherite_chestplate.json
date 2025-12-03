@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing_transform",
+  "base": [
+    "minecraft:iron_chestplate"
+  ],
+  "addition": [
+    "minecraft:netherite_chestplate"
+  ],
+  "result": {
+    "id": "minecraft:netherite_chestplate"
+  }
+}

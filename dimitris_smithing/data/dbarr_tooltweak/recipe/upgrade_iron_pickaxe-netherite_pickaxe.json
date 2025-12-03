@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing_transform",
+  "base": [
+    "minecraft:iron_pickaxe"
+  ],
+  "addition": [
+    "minecraft:netherite_pickaxe"
+  ],
+  "result": {
+    "id": "minecraft:netherite_pickaxe"
+  }
+}
