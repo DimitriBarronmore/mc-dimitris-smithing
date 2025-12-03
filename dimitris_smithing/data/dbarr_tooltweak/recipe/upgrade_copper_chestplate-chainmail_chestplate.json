@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing_transform",
+  "base": [
+    "minecraft:copper_chestplate"
+  ],
+  "addition": [
+    "minecraft:chainmail_chestplate"
+  ],
+  "result": {
+    "id": "minecraft:chainmail_chestplate"
+  }
+}

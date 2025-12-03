@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing_transform",
+  "base": [
+    "minecraft:diamond_shovel"
+  ],
+  "addition": [
+    "minecraft:netherite_shovel"
+  ],
+  "result": {
+    "id": "minecraft:netherite_shovel"
+  }
+}
