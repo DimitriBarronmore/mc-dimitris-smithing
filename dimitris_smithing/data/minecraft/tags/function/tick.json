@@ -1,0 +1,7 @@
+{
+  "values":[
+    "dbarr_tooltweak:reset_repair_cost",
+    "dbarr_tooltweak:clockify/tick_ensure_repairable",
+    "dbarr_tooltweak:clockify/tick_fix_repaired_tools"
+]
+}

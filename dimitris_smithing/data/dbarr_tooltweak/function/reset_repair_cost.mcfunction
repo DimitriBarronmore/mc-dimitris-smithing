@@ -1,0 +1,1 @@
+execute as @a if items entity @s player.cursor *[repair_cost=15 | repair_cost=31 | repair_cost=63] run item modify entity @s player.cursor {function:"minecraft:set_components",components:{"minecraft:repair_cost":15},conditions:[]}

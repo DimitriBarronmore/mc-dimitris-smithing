@@ -1,0 +1,7 @@
+{
+    "pack": {
+        "description": "Adds sacrificial tool tier upgrades, prevents named tools from fully breaking, and caps the anvil work penalty to 15.",
+        "min_format": [88, 0],
+		"max_format": [88, 0]
+    }
+}
