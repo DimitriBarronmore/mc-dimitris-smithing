@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing_transform",
+  "base": [
+    "minecraft:wooden_hoe"
+  ],
+  "addition": [
+    "minecraft:diamond_hoe"
+  ],
+  "result": {
+    "id": "minecraft:diamond_hoe"
+  }
+}

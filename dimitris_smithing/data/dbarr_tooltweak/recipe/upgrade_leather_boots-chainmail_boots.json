@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing_transform",
+  "base": [
+    "minecraft:leather_boots"
+  ],
+  "addition": [
+    "minecraft:chainmail_boots"
+  ],
+  "result": {
+    "id": "minecraft:chainmail_boots"
+  }
+}

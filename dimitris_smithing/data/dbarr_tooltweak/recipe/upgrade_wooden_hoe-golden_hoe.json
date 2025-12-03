@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing_transform",
+  "base": [
+    "minecraft:wooden_hoe"
+  ],
+  "addition": [
+    "minecraft:golden_hoe"
+  ],
+  "result": {
+    "id": "minecraft:golden_hoe"
+  }
+}

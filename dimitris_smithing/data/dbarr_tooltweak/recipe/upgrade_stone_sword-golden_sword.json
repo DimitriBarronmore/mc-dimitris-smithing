@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing_transform",
+  "base": [
+    "minecraft:stone_sword"
+  ],
+  "addition": [
+    "minecraft:golden_sword"
+  ],
+  "result": {
+    "id": "minecraft:golden_sword"
+  }
+}

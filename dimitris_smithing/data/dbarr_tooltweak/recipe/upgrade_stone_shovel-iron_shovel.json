@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing_transform",
+  "base": [
+    "minecraft:stone_shovel"
+  ],
+  "addition": [
+    "minecraft:iron_shovel"
+  ],
+  "result": {
+    "id": "minecraft:iron_shovel"
+  }
+}
