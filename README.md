@@ -1,4 +1,4 @@
-# mc-dimitris-smithing
+# Dimitri's Smithing
 A datapack for MC 1.20.10+ that rebalances crafting, keeping, upgrading, and repairing your gear.
 
 Inspired heavily by https://github.com/sisby-folk/tinkerers-smithing.
