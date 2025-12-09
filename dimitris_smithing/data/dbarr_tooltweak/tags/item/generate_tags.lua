@@ -13,6 +13,7 @@ local tools = {
     "pickaxe",
     "hoe",
     "sword",
+    "spear"
 }
 
 local tool_tiers = {

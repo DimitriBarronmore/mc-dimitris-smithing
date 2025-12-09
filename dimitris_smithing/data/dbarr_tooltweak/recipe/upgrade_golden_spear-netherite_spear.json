@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing_transform",
+  "base": [
+    "minecraft:golden_spear"
+  ],
+  "addition": [
+    "minecraft:netherite_spear"
+  ],
+  "result": {
+    "id": "minecraft:netherite_spear"
+  }
+}

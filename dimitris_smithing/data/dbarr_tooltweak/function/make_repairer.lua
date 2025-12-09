@@ -12,7 +12,8 @@ local tooltypes = {
     "pickaxe",
     "shovel",
     "sword",
-    "hoe"
+    "hoe",
+    "spear"
 }
 local durabilities = {
     wooden = 59,
