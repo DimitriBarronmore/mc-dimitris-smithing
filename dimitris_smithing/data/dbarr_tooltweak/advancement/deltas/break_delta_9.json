@@ -1,0 +1,20 @@
+{
+  "criteria": {
+    "nearly_broken": {
+      "trigger": "minecraft:item_durability_changed",
+      "conditions": {
+        "delta": -9,
+        "durability": {
+          "max": 0
+        },
+        "item": {
+          "items": "#dbarr_tooltweak:tools"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "dbarr_tooltweak:break/delta9"
+  }
+}
+    

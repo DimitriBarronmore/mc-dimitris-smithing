@@ -1,0 +1,30 @@
+{
+  "description": "Broken",
+  "supported_items": [
+    "minecraft:structure_block"
+  ],
+  "weight": 1,
+  "max_level": 1,
+  "min_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 0,
+  "slots": [
+    "hand"
+  ],
+  "effects": {
+    "minecraft:attributes": [
+      {
+        "attribute": "minecraft:block_break_speed",
+        "id": "dbarr:broken_tool",
+        "amount": 0,
+        "operation": "add_multiplied_total"
+      }
+    ]
+  }
+}

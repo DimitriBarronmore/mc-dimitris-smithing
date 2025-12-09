@@ -1,3 +1,0 @@
-advancement revoke @s only dbarr_tooltweak:nearly_broken_armor
-
-function dbarr_tooltweak:clockify/run_correct_clockers_armor

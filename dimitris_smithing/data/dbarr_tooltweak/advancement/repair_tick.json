@@ -1,0 +1,10 @@
+{
+  "criteria": {
+    "unbroken": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "rewards": {
+    "function": "dbarr_tooltweak:repair/repair_broken_1"
+  }
+}
