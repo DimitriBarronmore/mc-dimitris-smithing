@@ -7,7 +7,7 @@ $item replace entity @n[type=item_display,tag=dbtemp.current] contents from enti
 # ensure item damage is exact to get correct durability
 #  temporary
 data modify storage dbarr:tmp current_dur set from entity @n[type=item_display, tag=dbtemp.current] item.components.minecraft:damage
-item modify entity @n[type=item_display,tag=dbtemp.current] contents {function:"minecraft:set_damage",damage:0}
+item modify entity @n[type=item_display,tag=dbtemp.current] contents {type:"minecraft:set_damage",damage:0}
 data modify storage dbarr:tmp broken_item set from entity @n[type=item_display,tag=dbtemp.current] item
 
 # cleanup
