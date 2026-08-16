@@ -45,6 +45,7 @@ function write_file(type, curr, next)
     local next = next .. "_" .. type
     local txt = base_template:format(current, next, next)
     local f = io.open("upgrade_" .. current .. "-" .. next .. ".json", "w+")
+    assert(f)
     f:write(txt)
     f:close()
 end
