@@ -4,7 +4,7 @@ summon minecraft:mannequin ~ ~ ~ {\
     attributes: [{id:"minecraft:scale", base:0.0001d}],\
     active_effects:[{duration:-1,show_particles:0b,amplifier:1b,id:"minecraft:invisibility"}]\
     }
-item replace entity @n[type=mannequin,tag=dbtemp.current] weapon.mainhand from entity @s weapon.mainhand
+$item replace entity @n[type=mannequin,tag=dbtemp.current] weapon.mainhand from entity @s $(item_slot)
 
 ## Save the item's ID to storage for later.
 data remove storage dbarr:tmp stored_id
@@ -89,7 +89,7 @@ item modify entity @n[type=mannequin,tag=dbtemp.current] weapon.mainhand {type:"
 
 
 ## Give the final item back to the player.
-item replace entity @s weapon.mainhand from entity @n[type=mannequin,tag=dbtemp.current] weapon.mainhand
+$item replace entity @s $(item_slot) from entity @n[type=mannequin,tag=dbtemp.current] weapon.mainhand
 
 ## Cleanup.
 data remove storage dbarr:tmp stored_id

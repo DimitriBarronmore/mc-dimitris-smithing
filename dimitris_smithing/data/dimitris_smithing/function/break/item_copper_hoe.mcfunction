@@ -1,0 +1,7 @@
+advancement revoke @s only dimitris_smithing:trigger_break/item_copper_hoe
+#say "broke minecraft:copper_hoe"
+
+data modify storage dbarr:tmp item_id set value "minecraft:copper_hoe"
+function dimitris_smithing:set_broken {item_id: "minecraft:copper_hoe"}
+
+data remove storage dbarr:tmp item_id

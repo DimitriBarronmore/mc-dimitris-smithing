@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "nearly_broken": {
+      "trigger": "minecraft:item_durability_changed",
+      "conditions": {
+        "durability": {
+          "max": 5
+        },
+        "item": {
+          "items": "minecraft:fishing_rod"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "dimitris_smithing:break/item_fishing_rod"
+  }
+}

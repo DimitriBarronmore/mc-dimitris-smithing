@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "nearly_broken": {
+      "trigger": "minecraft:item_durability_changed",
+      "conditions": {
+        "durability": {
+          "max": 0
+        },
+        "item": {
+          "items": "minecraft:stone_hoe"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "dimitris_smithing:break/item_stone_hoe"
+  }
+}
