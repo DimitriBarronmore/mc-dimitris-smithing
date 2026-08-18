@@ -42,6 +42,10 @@ item replace entity @n[type=mannequin,tag=dbtemp.current] weapon.mainhand from e
 execute as @n[type=mannequin,tag=dbtemp.current] run \
     data modify entity @s equipment.mainhand.id set from entity @s equipment.mainhand.components.minecraft:custom_data.stored_id
 
+## Store the item's current damage into the stored damage component, so it's repaired with the damage it has now and not when it was broken.
+execute as @n[type=mannequin,tag=dbtemp.current] run \
+  data modify entity @s equipment.mainhand.components.minecraft:custom_data.stored_components.minecraft:damage set from entity @s equipment.mainhand.components.minecraft:damage
+
 ## Reset the item's components to be as they were.
 execute as @n[type=mannequin,tag=dbtemp.current] run \
   data modify entity @s equipment.mainhand.components set from entity @s equipment.mainhand.components.minecraft:custom_data.stored_components

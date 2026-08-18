@@ -1,8 +1,6 @@
 {
   "description": "Broken",
-  "supported_items": [
-    "minecraft:structure_block"
-  ],
+  "supported_items": "#minecraft:enchantable/durability",
   "weight": 1,
   "max_level": 1,
   "min_cost": {
@@ -18,12 +16,13 @@
     "hand"
   ],
   "effects": {
-    "minecraft:attributes": [
+
+    "minecraft:item_damage": [
       {
-        "attribute": "minecraft:block_break_speed",
-        "id": "dbarr:broken_tool",
-        "amount": 0,
-        "operation": "add_multiplied_total"
+        "effect": {
+          "type": "minecraft:set",
+          "value": 0
+        }
       }
     ]
   }

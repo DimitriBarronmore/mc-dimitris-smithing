@@ -64,8 +64,9 @@ data modify entity @n[type=mannequin,tag=dbtemp.current] \
   equipment.mainhand.components.minecraft:item_model set from storage dbarr:tmp stored_components.minecraft:item_model
 data modify entity @n[type=mannequin,tag=dbtemp.current] \
   equipment.mainhand.components.minecraft:max_damage set from storage dbarr:tmp stored_components.minecraft:max_damage
+## Modify the item to have 0 durability, since it's broken.
 data modify entity @n[type=mannequin,tag=dbtemp.current] \
-  equipment.mainhand.components.minecraft:damage set from storage dbarr:tmp stored_components.minecraft:damage
+  equipment.mainhand.components.minecraft:damage set from storage dbarr:tmp stored_components.minecraft:max_damage
 data modify entity @n[type=mannequin,tag=dbtemp.current] \
   equipment.mainhand.components.minecraft:damage_resistant set from storage dbarr:tmp stored_components.minecraft:damage_resistant
 data modify entity @n[type=mannequin,tag=dbtemp.current] \
@@ -82,7 +83,10 @@ execute if data storage dbarr:tmp stored_components.minecraft:equippable run \
   data modify entity @n[type=mannequin,tag=dbtemp.current] \
     equipment.mainhand.components.minecraft:equippable.asset_id set value "minecraft:pink_carpet"
 
-#item modify entity @n[type=mannequin,tag=dbtemp.current] weapon.mainhand {type:"minecraft:set_components", "components":{"!minecraft:enchantments":{}}}
+## Add "broken" enchantment to the item.
+item modify entity @n[type=mannequin,tag=dbtemp.current] weapon.mainhand {type:"minecraft:set_components", "components":{"minecraft:enchantments":{"dimitris_smithing:broken":1}}}
+
+
 
 ## Give the final item back to the player.
 item replace entity @s weapon.mainhand from entity @n[type=mannequin,tag=dbtemp.current] weapon.mainhand
