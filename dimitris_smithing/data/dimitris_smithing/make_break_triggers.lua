@@ -92,7 +92,7 @@ advancement revoke @s only dimitris_smithing:trigger_break/item_%s
 #say "broke %s"
 %s
 data modify storage dbarr:tmp item_id set value "%s"
-function dimitris_smithing:set_broken {item_id: "%s"}
+function dimitris_smithing:break_and_repair/set_broken {item_id: "%s"}
 %s
 data remove storage dbarr:tmp item_id
 ]]

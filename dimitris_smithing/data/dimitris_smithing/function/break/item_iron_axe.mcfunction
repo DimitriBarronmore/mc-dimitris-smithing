@@ -2,6 +2,6 @@ advancement revoke @s only dimitris_smithing:trigger_break/item_iron_axe
 #say "broke minecraft:iron_axe"
 
 data modify storage dbarr:tmp item_id set value "minecraft:iron_axe"
-function dimitris_smithing:set_broken {item_id: "minecraft:iron_axe"}
+function dimitris_smithing:break_and_repair/set_broken {item_id: "minecraft:iron_axe"}
 
 data remove storage dbarr:tmp item_id
