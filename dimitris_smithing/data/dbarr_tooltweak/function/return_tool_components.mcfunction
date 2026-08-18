@@ -6,38 +6,6 @@ summon minecraft:mannequin ~ ~ ~ {\
 
 item replace entity @n[type=mannequin,tag=dbtemp.current] weapon.mainhand from entity @s weapon.mainhand
 
-# Clear un-components.
-# data remove entity @n[type=mannequin,tag=dbtemp.current] equipment.mainhand.components.!minecraft:equippable
-# data remove entity @n[type=mannequin,tag=dbtemp.current] equipment.mainhand.components.!minecraft:attack_animation
-# data remove entity @n[type=mannequin,tag=dbtemp.current] equipment.mainhand.components.!minecraft:tool
-# data remove entity @n[type=mannequin,tag=dbtemp.current] equipment.mainhand.components.!minecraft:attribute_modifiers
-# data remove entity @n[type=mannequin,tag=dbtemp.current] equipment.mainhand.components.!minecraft:attack_range
-# data remove entity @n[type=mannequin,tag=dbtemp.current] equipment.mainhand.components.!minecraft:enchantments
-# data remove entity @n[type=mannequin,tag=dbtemp.current] equipment.mainhand.components.!minecraft:piercing_weapon
-# data remove entity @n[type=mannequin,tag=dbtemp.current] equipment.mainhand.components.!minecraft:kinetic_weapon
-
-# # Unstore enchantments.
-# execute as @n[type=mannequin,tag=dbtemp.current] run data modify entity @s equipment.mainhand.components.minecraft:enchantments set from entity @s equipment.mainhand.components.minecraft:custom_data.stored_components.minecraft:enchantments
-
-# data remove entity @n[type=mannequin,tag=dbtemp.current] equipment.mainhand.components.minecraft:stored_enchantments
-
-# # Re-copy components.
-# execute as @n[type=mannequin,tag=dbtemp.current] run data modify entity @s equipment.mainhand.components.minecraft:equippable set from entity @s equipment.mainhand.components.minecraft:custom_data.stored_components.minecraft:equippable
-
-# execute as @n[type=mannequin,tag=dbtemp.current] run data modify entity @s equipment.mainhand.components.minecraft:attack_animation set from entity @s equipment.mainhand.components.minecraft:custom_data.stored_components.minecraft:attack_animation
-
-# execute as @n[type=mannequin,tag=dbtemp.current] run data modify entity @s equipment.mainhand.components.minecraft:tool set from entity @s equipment.mainhand.components.minecraft:custom_data.stored_components.minecraft:tool
-
-# execute as @n[type=mannequin,tag=dbtemp.current] run data modify entity @s equipment.mainhand.components.minecraft:attribute_modifiers set from entity @s equipment.mainhand.components.minecraft:custom_data.stored_components.minecraft:attribute_modifiers
-
-# execute as @n[type=mannequin,tag=dbtemp.current] run data modify entity @s equipment.mainhand.components.minecraft:attack_range set from entity @s equipment.mainhand.components.minecraft:custom_data.stored_components.minecraft:attack_range
-
-# execute as @n[type=mannequin,tag=dbtemp.current] run data modify entity @s equipment.mainhand.components.minecraft:kinetic_weapon set from entity @s equipment.mainhand.components.minecraft:custom_data.stored_components.minecraft:kinetic_weapon
-
-# execute as @n[type=mannequin,tag=dbtemp.current] run data modify entity @s equipment.mainhand.components.minecraft:piercing_weapon set from entity @s equipment.mainhand.components.minecraft:custom_data.stored_components.minecraft:piercing_weapon
-
-# data remove entity @n[type=mannequin,tag=dbtemp.current] equipment.mainhand.components.minecraft:custom_data.stored_components
-
 ## Reset the item's ID to be correct.
 execute as @n[type=mannequin,tag=dbtemp.current] run \
     data modify entity @s equipment.mainhand.id set from entity @s equipment.mainhand.components.minecraft:custom_data.stored_id
