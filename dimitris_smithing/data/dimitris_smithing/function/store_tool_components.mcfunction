@@ -7,7 +7,7 @@ summon minecraft:mannequin ~ ~ ~ {\
 $item replace entity @n[type=mannequin,tag=dbtemp.current] weapon.mainhand from entity @s $(item_slot)
 
 ## Early return unless item is either named or enchanted.
-execute as @n[type=mannequin,tag=dbtemp.current] unless predicate dimitris_smithing:named_or_enchanted_tool run return fail
+execute as @n[type=mannequin,tag=dbtemp.current] unless predicate dimitris_smithing:named_or_enchanted_tool run return run function dimitris_smithing:store_tool_components_cleanup
 
 ## Save the item's ID to storage for later.
 data remove storage dbarr:tmp stored_id
@@ -22,7 +22,7 @@ execute at @s as @n[type=mannequin,tag=dbtemp.current] run loot replace entity @
       "entries": [\
         {\
           "type": "minecraft:item",\
-          "name": "minecraft:stone_sword"\
+          "name": "minecraft:stone_pickaxe"\
         }\
       ],\
       "modifier": {\
@@ -95,10 +95,7 @@ item modify entity @n[type=mannequin,tag=dbtemp.current] weapon.mainhand {type:"
 $item replace entity @s $(item_slot) from entity @n[type=mannequin,tag=dbtemp.current] weapon.mainhand
 
 ## Cleanup.
-data remove storage dbarr:tmp stored_id
-data remove storage dbarr:tmp stored_components
-tp @n[type=mannequin,tag=dbtemp.current] ~ -100 ~
-kill @n[type=mannequin,tag=dbtemp.current]
+function dimitris_smithing:store_tool_components_cleanup
 
 # TODO
 # Equippable tag for armor, just so it can still be replaced in-slot
