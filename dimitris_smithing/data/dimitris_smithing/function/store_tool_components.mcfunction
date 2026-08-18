@@ -6,6 +6,9 @@ summon minecraft:mannequin ~ ~ ~ {\
     }
 $item replace entity @n[type=mannequin,tag=dbtemp.current] weapon.mainhand from entity @s $(item_slot)
 
+## Early return unless item is either named or enchanted.
+execute as @n[type=mannequin,tag=dbtemp.current] unless predicate dimitris_smithing:named_or_enchanted_tool run return fail
+
 ## Save the item's ID to storage for later.
 data remove storage dbarr:tmp stored_id
 data modify storage dbarr:tmp stored_id set from entity @n[type=mannequin,tag=dbtemp.current] equipment.mainhand.id
