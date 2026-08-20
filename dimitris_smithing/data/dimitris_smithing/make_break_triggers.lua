@@ -82,7 +82,7 @@ local template_advancement = [[
     }
   },
   "rewards": {
-    "function": "dimitris_smithing:break/item_%s"
+    "function": "dimitris_smithing:trigger_break/item_%s"
   }
 }
 ]]
@@ -126,7 +126,7 @@ for i, item in ipairs(items) do
   assert(f)
   f:write(template_advancement:format(max_dur, item, short_name))
   f:close()
-  local f = io.open("function/break/item_" .. short_name .. ".mcfunction", "w+")
+  local f = io.open("function/trigger_break/item_" .. short_name .. ".mcfunction", "w+")
   assert(f)
   f:write(template_function:format(short_name, item, before_f, item, item, after_f))
   f:close()

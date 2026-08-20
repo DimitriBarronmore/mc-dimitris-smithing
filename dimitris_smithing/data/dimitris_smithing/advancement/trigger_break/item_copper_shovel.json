@@ -13,6 +13,6 @@
     }
   },
   "rewards": {
-    "function": "dimitris_smithing:break/item_copper_shovel"
+    "function": "dimitris_smithing:trigger_break/item_copper_shovel"
   }
 }
