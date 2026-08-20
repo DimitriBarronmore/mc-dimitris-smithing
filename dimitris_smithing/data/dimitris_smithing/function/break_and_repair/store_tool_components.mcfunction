@@ -86,8 +86,16 @@ execute if data storage dbarr:tmp stored_components.minecraft:equippable run \
   data modify entity @n[type=mannequin,tag=dbtemp.current] \
     equipment.mainhand.components.minecraft:equippable.asset_id set value "minecraft:pink_carpet"
 
-## Add "broken" enchantment to the item.
-item modify entity @n[type=mannequin,tag=dbtemp.current] weapon.mainhand {type:"minecraft:set_components", "components":{"minecraft:enchantments":{"dimitris_smithing:broken":1}}}
+## Add "broken" enchantment to the item, with no glint.
+item modify entity @n[type=mannequin,tag=dbtemp.current] weapon.mainhand { \
+  "type": "minecraft:set_components", \
+  "components": { \
+    "minecraft:enchantments": { \
+      "dimitris_smithing:broken": 1 \
+    }, \
+    "minecraft:enchantment_glint_override": false, \
+  } \
+}
 
 
 
