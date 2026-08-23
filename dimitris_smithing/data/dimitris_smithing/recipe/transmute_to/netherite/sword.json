@@ -1,0 +1,6 @@
+{
+    "type": "smithing_transform",
+    "base": "#minecraft:swords",
+    "addition": "minecraft:netherite_sword",
+    "result": "minecraft:netherite_sword"
+}

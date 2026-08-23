@@ -1,0 +1,6 @@
+{
+    "type": "smithing_transform",
+    "base": "#minecraft:hoes",
+    "addition": "minecraft:netherite_hoe",
+    "result": "minecraft:netherite_hoe"
+}

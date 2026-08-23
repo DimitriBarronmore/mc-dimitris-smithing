@@ -1,0 +1,6 @@
+{
+    "type": "smithing_transform",
+    "base": "#minecraft:leg_armor",
+    "addition": "minecraft:copper_leggings",
+    "result": "minecraft:copper_leggings"
+}

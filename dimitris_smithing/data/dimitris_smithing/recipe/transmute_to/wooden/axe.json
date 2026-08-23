@@ -1,0 +1,6 @@
+{
+    "type": "smithing_transform",
+    "base": "#minecraft:axes",
+    "addition": "minecraft:wooden_axe",
+    "result": "minecraft:wooden_axe"
+}

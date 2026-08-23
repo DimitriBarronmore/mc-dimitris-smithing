@@ -1,0 +1,6 @@
+{
+    "type": "smithing_transform",
+    "base": "#minecraft:spears",
+    "addition": "minecraft:copper_spear",
+    "result": "minecraft:copper_spear"
+}

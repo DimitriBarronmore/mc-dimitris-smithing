@@ -1,0 +1,6 @@
+{
+    "type": "smithing_transform",
+    "base": "#minecraft:head_armor",
+    "addition": "minecraft:chainmail_helmet",
+    "result": "minecraft:chainmail_helmet"
+}

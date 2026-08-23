@@ -1,0 +1,6 @@
+{
+    "type": "smithing_transform",
+    "base": "#minecraft:foot_armor",
+    "addition": "minecraft:diamond_boots",
+    "result": "minecraft:diamond_boots"
+}

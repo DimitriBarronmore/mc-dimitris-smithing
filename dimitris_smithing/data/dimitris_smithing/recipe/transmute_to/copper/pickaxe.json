@@ -1,0 +1,6 @@
+{
+    "type": "smithing_transform",
+    "base": "#minecraft:pickaxes",
+    "addition": "minecraft:copper_pickaxe",
+    "result": "minecraft:copper_pickaxe"
+}
