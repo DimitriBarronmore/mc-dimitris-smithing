@@ -22,7 +22,7 @@ execute at @s as @n[type=mannequin,tag=dbtemp.current] run loot replace entity @
       "entries": [\
         {\
           "type": "minecraft:item",\
-          "name": "minecraft:wooden_pickaxe"\
+          "name": "minecraft:structure_block"\
         }\
       ],\
       "modifier": {\
