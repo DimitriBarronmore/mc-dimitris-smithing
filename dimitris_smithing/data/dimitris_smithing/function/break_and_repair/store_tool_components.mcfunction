@@ -22,7 +22,7 @@ execute at @s as @n[type=mannequin,tag=dbtemp.current] run loot replace entity @
       "entries": [\
         {\
           "type": "minecraft:item",\
-          "name": "minecraft:stone_pickaxe"\
+          "name": "minecraft:wooden_pickaxe"\
         }\
       ],\
       "modifier": {\
@@ -37,8 +37,22 @@ execute at @s as @n[type=mannequin,tag=dbtemp.current] run loot replace entity @
 data remove storage dbarr:tmp stored_components
 data modify storage dbarr:tmp stored_components set from entity @n[type=mannequin,tag=dbtemp.current] equipment.mainhand.components
 
+## Return item id.
+## Roundabout method to only apply to certain items,
+## as other items have right click effects that need to be blocked.
+execute as @n[type=mannequin,tag=dbtemp.current] run loot replace entity @s weapon.offhand fish minecraft:carve/pumpkin ~ ~ ~ mainhand
+execute as @n[type=mannequin,tag=dbtemp.current] run data modify entity @s equipment.offhand.id set from storage dbarr:tmp stored_id
+
+execute as @n[type=mannequin,tag=dbtemp.current] \ 
+  if items entity @s weapon.offhand #dimitris_smithing:remains_id run \ 
+  data modify entity @s equipment.mainhand.id set from storage dbarr:tmp stored_id
+
 ## Clear the item's base components.
 data remove entity @n[type=mannequin,tag=dbtemp.current] equipment.mainhand.components
+
+## Disable any block transformers annoyingly re-added with the ID change.
+item modify entity @n[type=mannequin,tag=dbtemp.current] weapon.mainhand \ 
+  {"type": "set_components", "components": {"!block_transformer":{}}}
 
 ## Copy components and ID from storage to custom data component.
 item modify entity @n[type=mannequin,tag=dbtemp.current] weapon.mainhand {\
@@ -96,8 +110,6 @@ item modify entity @n[type=mannequin,tag=dbtemp.current] weapon.mainhand { \
     "minecraft:enchantment_glint_override": false, \
   } \
 }
-
-
 
 ## Give the final item back to the player.
 $item replace entity @s $(item_slot) from entity @n[type=mannequin,tag=dbtemp.current] weapon.mainhand
