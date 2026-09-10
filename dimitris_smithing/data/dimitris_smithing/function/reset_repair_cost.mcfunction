@@ -1,4 +1,4 @@
-item modify entity @s [\ 
+item modify entity @s [ \ 
     {type:slot_range,source:this,slots:"container.*"}, \
     {type:slot_range,source:this,slots:"armor.*"}, \
     {type:slot_range,source:this,slots:"weapon.*"},\ 

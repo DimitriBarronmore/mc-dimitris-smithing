@@ -20,7 +20,7 @@ item modify entity @s [\
     "type": "minecraft:set_components", \
     "components": { \
       "minecraft:repairable": { \
-        "items": "#minecraft:diamond_tool_materials" \
+        "items": "#dimitris_smithing:repairs/netherite" \
       } \
     } \
   } \
@@ -46,7 +46,7 @@ item modify entity @s [\
     "type": "minecraft:set_components", \
     "components": { \
       "minecraft:repairable": { \
-        "items": "#minecraft:repairs_diamond_armor" \
+        "items": "#dimitris_smithing:repairs/netherite" \
       } \
     } \
   } \
