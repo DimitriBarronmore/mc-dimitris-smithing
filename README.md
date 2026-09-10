@@ -5,7 +5,6 @@ Last major update: MC 26.2
 Inspired heavily by https://github.com/sisby-folk/tinkerers-smithing.
 
 > TODO: Finish before releasing
-> - Add and use tags for all repair materials, including for normal vanilla items
 > - Implement "shapeless upgrade" system using shapeless transmutation recipes that unset the damage and enchantment components
 > - Change "broken tool was repaired" predicates to not rely purely on the presence of the enchantment, because that doesn't work so well with shapeless repair
 > - For the sake of the crafting recipes, find a way to have "broken" tools stay their own ID
@@ -13,20 +12,22 @@ Inspired heavily by https://github.com/sisby-folk/tinkerers-smithing.
 ## Pack features:
 
 ### Repair Revamp
-All items with durability can be repaired in an anvil using appropriate materials, including tools that can normally only be repaired through anvil combining.
+All items with durability can be repaired in an anvil using appropriate materials, including tools that can normally only be repaired through anvil combining. These are the defaults:
 
-- Netherite Tools = #minecraft:diamond_tool_materials
+- Netherite Tools = #minecraft:repairs_diamond_armor
 - Netherite Armor = #minecraft:repairs_diamond_armor
-- Flint and Steel = #minecraft:iron_tool_materials
+- Flint and Steel = #minecraft:repairs_iron_armor
 - Brush = minecraft:feather
 - Fishing Rod = minecraft:string
 - Carrot on a Stick = minecraft:carrot
 - Warped Fungus on a Stick = minecraft:warped_fungus
-- Shears = #minecraft:iron_tool_materials
-- Shield = #minecraft:iron_tool_materials
+- Shears = #minecraft:repairs_iron_armor
+- Shield = #minecraft:repairs_iron_armor
 - Bow = minecraft:string
-- Trident = #dimitris_smithing:prismarine_materials (prismarine crystals or shards)
+- Trident = #dimitris_smithing:repairs/trident (prismarine crystals or shards)
 - Crossbow = minecraft:string
+
+All of these materials, and the repair materials of other normal vanilla items can be changed or added to by changing the tags under `#dimitris_smithing:repairs/*`.
 
 ### Tool Upgrading
 

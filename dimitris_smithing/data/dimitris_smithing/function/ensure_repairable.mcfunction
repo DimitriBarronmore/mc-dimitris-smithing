@@ -1,3 +1,332 @@
+## Leather armors.
+item modify entity @s [\ 
+    {type:slot_range,source:this,slots:"container.*"}, \
+    {type:slot_range,source:this,slots:"armor.*"}, \
+    {type:slot_range,source:this,slots:"weapon.*"},\ 
+    {type:slot_range,source:this,slots:"player.cursor"},\ 
+    {type:slot_range,source:this,slots:"player.crafting.*"}\ 
+    ] \
+    { \
+  "type": "minecraft:filtered", \
+  "item_filter": { \
+    "items": "#dimitris_smithing:armor_leather", \
+    "components": { \
+      "minecraft:repairable": { \
+        "items": "#minecraft:repairs_leather_armor" \
+      } \
+    } \
+  }, \
+  "on_pass": { \
+    "type": "minecraft:set_components", \
+    "components": { \
+      "minecraft:repairable": { \
+        "items": "#dimitris_smithing:repairs/leather" \
+      } \
+    } \
+  } \
+}
+
+## Chainmail Armors.
+item modify entity @s [\ 
+    {type:slot_range,source:this,slots:"container.*"}, \
+    {type:slot_range,source:this,slots:"armor.*"}, \
+    {type:slot_range,source:this,slots:"weapon.*"},\ 
+    {type:slot_range,source:this,slots:"player.cursor"},\ 
+    {type:slot_range,source:this,slots:"player.crafting.*"}\ 
+    ] \
+    { \
+  "type": "minecraft:filtered", \
+  "item_filter": { \
+    "items": "#dimitris_smithing:armor_chain", \
+    "components": { \
+      "minecraft:repairable": { \
+        "items": "#minecraft:repairs_chain_armor" \
+      } \
+    } \
+  }, \
+  "on_pass": { \
+    "type": "minecraft:set_components", \
+    "components": { \
+      "minecraft:repairable": { \
+        "items": "#dimitris_smithing:repairs/netherite" \
+      } \
+    } \
+  } \
+}
+
+## Wooden Tools.
+item modify entity @s [\ 
+    {type:slot_range,source:this,slots:"container.*"}, \
+    {type:slot_range,source:this,slots:"armor.*"}, \
+    {type:slot_range,source:this,slots:"weapon.*"},\ 
+    {type:slot_range,source:this,slots:"player.cursor"},\ 
+    {type:slot_range,source:this,slots:"player.crafting.*"}\ 
+    ] \
+    { \
+  "type": "minecraft:filtered", \
+  "item_filter": { \
+    "items": "#dimitris_smithing:tools_wooden", \
+    "components": { \
+      "minecraft:repairable": { \
+        "items": "#minecraft:wooden_tool_materials" \
+      } \
+    } \
+  }, \
+  "on_pass": { \
+    "type": "minecraft:set_components", \
+    "components": { \
+      "minecraft:repairable": { \
+        "items": "#dimitris_smithing:repairs/wooden" \
+      } \
+    } \
+  } \
+}
+
+## Stone Tools
+item modify entity @s [\ 
+    {type:slot_range,source:this,slots:"container.*"}, \
+    {type:slot_range,source:this,slots:"armor.*"}, \
+    {type:slot_range,source:this,slots:"weapon.*"},\ 
+    {type:slot_range,source:this,slots:"player.cursor"},\ 
+    {type:slot_range,source:this,slots:"player.crafting.*"}\ 
+    ] \
+    { \
+  "type": "minecraft:filtered", \
+  "item_filter": { \
+    "items": "#dimitris_smithing:tools_stone", \
+    "components": { \
+      "minecraft:repairable": { \
+        "items": "#minecraft:stone_tool_materials" \
+      } \
+    } \
+  }, \
+  "on_pass": { \
+    "type": "minecraft:set_components", \
+    "components": { \
+      "minecraft:repairable": { \
+        "items": "#dimitris_smithing:repairs/stone" \
+      } \
+    } \
+  } \
+}
+
+## Copper tools and armor.
+item modify entity @s [\ 
+    {type:slot_range,source:this,slots:"container.*"}, \
+    {type:slot_range,source:this,slots:"armor.*"}, \
+    {type:slot_range,source:this,slots:"weapon.*"},\ 
+    {type:slot_range,source:this,slots:"player.cursor"},\ 
+    {type:slot_range,source:this,slots:"player.crafting.*"}\ 
+    ] \
+    { \
+  "type": "minecraft:filtered", \
+  "item_filter": { \
+    "items": "#dimitris_smithing:tools_copper", \
+    "components": { \
+      "minecraft:repairable": { \
+        "items": "#minecraft:copper_tool_materials" \
+      } \
+    } \
+  }, \
+  "on_pass": { \
+    "type": "minecraft:set_components", \
+    "components": { \
+      "minecraft:repairable": { \
+        "items": "#dimitris_smithing:repairs/copper" \
+      } \
+    } \
+  } \
+}
+item modify entity @s [\ 
+    {type:slot_range,source:this,slots:"container.*"}, \
+    {type:slot_range,source:this,slots:"armor.*"}, \
+    {type:slot_range,source:this,slots:"weapon.*"},\ 
+    {type:slot_range,source:this,slots:"player.cursor"},\ 
+    {type:slot_range,source:this,slots:"player.crafting.*"}\ 
+    ] \
+    { \
+  "type": "minecraft:filtered", \
+  "item_filter": { \
+    "items": "#dimitris_smithing:armor_copper", \
+    "components": { \
+      "minecraft:repairable": { \
+        "items": "#minecraft:repairs_copper_armor" \
+      } \
+    } \
+  }, \
+  "on_pass": { \
+    "type": "minecraft:set_components", \
+    "components": { \
+      "minecraft:repairable": { \
+        "items": "#dimitris_smithing:repairs/copper" \
+      } \
+    } \
+  } \
+}
+
+## Iron tools and armor.
+item modify entity @s [\ 
+    {type:slot_range,source:this,slots:"container.*"}, \
+    {type:slot_range,source:this,slots:"armor.*"}, \
+    {type:slot_range,source:this,slots:"weapon.*"},\ 
+    {type:slot_range,source:this,slots:"player.cursor"},\ 
+    {type:slot_range,source:this,slots:"player.crafting.*"}\ 
+    ] \
+    { \
+  "type": "minecraft:filtered", \
+  "item_filter": { \
+    "items": "#dimitris_smithing:tools_iron", \
+    "components": { \
+      "minecraft:repairable": { \
+        "items": "#minecraft:iron_tool_materials" \
+      } \
+    } \
+  }, \
+  "on_pass": { \
+    "type": "minecraft:set_components", \
+    "components": { \
+      "minecraft:repairable": { \
+        "items": "#dimitris_smithing:repairs/iron" \
+      } \
+    } \
+  } \
+}
+item modify entity @s [\ 
+    {type:slot_range,source:this,slots:"container.*"}, \
+    {type:slot_range,source:this,slots:"armor.*"}, \
+    {type:slot_range,source:this,slots:"weapon.*"},\ 
+    {type:slot_range,source:this,slots:"player.cursor"},\ 
+    {type:slot_range,source:this,slots:"player.crafting.*"}\ 
+    ] \
+    { \
+  "type": "minecraft:filtered", \
+  "item_filter": { \
+    "items": "#dimitris_smithing:armor_iron", \
+    "components": { \
+      "minecraft:repairable": { \
+        "items": "#minecraft:repairs_iron_armor" \
+      } \
+    } \
+  }, \
+  "on_pass": { \
+    "type": "minecraft:set_components", \
+    "components": { \
+      "minecraft:repairable": { \
+        "items": "#dimitris_smithing:repairs/iron" \
+      } \
+    } \
+  } \
+}
+
+## Golden tools and armor.
+item modify entity @s [\ 
+    {type:slot_range,source:this,slots:"container.*"}, \
+    {type:slot_range,source:this,slots:"armor.*"}, \
+    {type:slot_range,source:this,slots:"weapon.*"},\ 
+    {type:slot_range,source:this,slots:"player.cursor"},\ 
+    {type:slot_range,source:this,slots:"player.crafting.*"}\ 
+    ] \
+    { \
+  "type": "minecraft:filtered", \
+  "item_filter": { \
+    "items": "#dimitris_smithing:tools_golden", \
+    "components": { \
+      "minecraft:repairable": { \
+        "items": "#minecraft:gold_tool_materials" \
+      } \
+    } \
+  }, \
+  "on_pass": { \
+    "type": "minecraft:set_components", \
+    "components": { \
+      "minecraft:repairable": { \
+        "items": "#dimitris_smithing:repairs/golden" \
+      } \
+    } \
+  } \
+}
+item modify entity @s [\ 
+    {type:slot_range,source:this,slots:"container.*"}, \
+    {type:slot_range,source:this,slots:"armor.*"}, \
+    {type:slot_range,source:this,slots:"weapon.*"},\ 
+    {type:slot_range,source:this,slots:"player.cursor"},\ 
+    {type:slot_range,source:this,slots:"player.crafting.*"}\ 
+    ] \
+    { \
+  "type": "minecraft:filtered", \
+  "item_filter": { \
+    "items": "#dimitris_smithing:armor_golden", \
+    "components": { \
+      "minecraft:repairable": { \
+        "items": "#minecraft:repairs_gold_armor" \
+      } \
+    } \
+  }, \
+  "on_pass": { \
+    "type": "minecraft:set_components", \
+    "components": { \
+      "minecraft:repairable": { \
+        "items": "#dimitris_smithing:repairs/golden" \
+      } \
+    } \
+  } \
+}
+
+## Diamond tools and armor.
+item modify entity @s [\ 
+    {type:slot_range,source:this,slots:"container.*"}, \
+    {type:slot_range,source:this,slots:"armor.*"}, \
+    {type:slot_range,source:this,slots:"weapon.*"},\ 
+    {type:slot_range,source:this,slots:"player.cursor"},\ 
+    {type:slot_range,source:this,slots:"player.crafting.*"}\ 
+    ] \
+    { \
+  "type": "minecraft:filtered", \
+  "item_filter": { \
+    "items": "#dimitris_smithing:tools_diamond", \
+    "components": { \
+      "minecraft:repairable": { \
+        "items": "#minecraft:diamond_tool_materials" \
+      } \
+    } \
+  }, \
+  "on_pass": { \
+    "type": "minecraft:set_components", \
+    "components": { \
+      "minecraft:repairable": { \
+        "items": "#dimitris_smithing:repairs/diamond" \
+      } \
+    } \
+  } \
+}
+item modify entity @s [\ 
+    {type:slot_range,source:this,slots:"container.*"}, \
+    {type:slot_range,source:this,slots:"armor.*"}, \
+    {type:slot_range,source:this,slots:"weapon.*"},\ 
+    {type:slot_range,source:this,slots:"player.cursor"},\ 
+    {type:slot_range,source:this,slots:"player.crafting.*"}\ 
+    ] \
+    { \
+  "type": "minecraft:filtered", \
+  "item_filter": { \
+    "items": "#dimitris_smithing:armor_diamond", \
+    "components": { \
+      "minecraft:repairable": { \
+        "items": "#minecraft:repairs_diamond_armor" \
+      } \
+    } \
+  }, \
+  "on_pass": { \
+    "type": "minecraft:set_components", \
+    "components": { \
+      "minecraft:repairable": { \
+        "items": "#dimitris_smithing:repairs/diamond" \
+      } \
+    } \
+  } \
+}
+
+
 ## Change netherite tools and armors to use diamond materials.
 item modify entity @s [\ 
     {type:slot_range,source:this,slots:"container.*"}, \
@@ -52,6 +381,34 @@ item modify entity @s [\
   } \
 }
 
+## Turtle helmet.
+item modify entity @s [\ 
+    {type:slot_range,source:this,slots:"container.*"}, \
+    {type:slot_range,source:this,slots:"armor.*"}, \
+    {type:slot_range,source:this,slots:"weapon.*"},\ 
+    {type:slot_range,source:this,slots:"player.cursor"},\ 
+    {type:slot_range,source:this,slots:"player.crafting.*"}\ 
+    ] \
+    { \
+  "type": "minecraft:filtered", \
+  "item_filter": { \
+    "items": "minecraft:turtle_helmet", \
+    "components": { \
+      "minecraft:repairable": { \
+        "items": "#minecraft:repairs_turtle_helmet" \
+      } \
+    } \
+  }, \
+  "on_pass": { \
+    "type": "minecraft:set_components", \
+    "components": { \
+      "minecraft:repairable": { \
+        "items": "#dimitris_smithing:repairs/turtle" \
+      } \
+    } \
+  } \
+}
+
 ## Flint and Steel repairs with iron.
 item modify entity @s [\ 
     {type:slot_range,source:this,slots:"container.*"}, \
@@ -76,7 +433,7 @@ item modify entity @s [\
         "type": "minecraft:set_components", \
         "components": { \
             "minecraft:repairable": { \
-            "items": "#minecraft:iron_tool_materials" \
+            "items": "#dimitris_smithing:repairs/flint_and_steel" \
             } \
         } \
         } \
@@ -107,7 +464,7 @@ item modify entity @s [\
         "type": "minecraft:set_components", \
         "components": { \
             "minecraft:repairable": { \
-            "items": "minecraft:feather" \
+            "items": "#dimitris_smithing:repairs/brush" \
             } \
         } \
         } \
@@ -138,7 +495,7 @@ item modify entity @s [\
         "type": "minecraft:set_components", \
         "components": { \
             "minecraft:repairable": { \
-            "items": "minecraft:string" \
+            "items": "#dimitris_smithing:repairs/fishing_rod" \
             } \
         } \
         } \
@@ -169,7 +526,7 @@ item modify entity @s [\
         "type": "minecraft:set_components", \
         "components": { \
             "minecraft:repairable": { \
-            "items": "minecraft:carrot" \
+            "items": "#dimitris_smithing:repairs/carrot_on_stick" \
             } \
         } \
         } \
@@ -200,7 +557,7 @@ item modify entity @s [\
         "type": "minecraft:set_components", \
         "components": { \
             "minecraft:repairable": { \
-            "items": "minecraft:warped_fungus" \
+            "items": "#dimitris_smithing:repairs/fungus_on_stick" \
             } \
         } \
         } \
@@ -231,7 +588,7 @@ item modify entity @s [\
         "type": "minecraft:set_components", \
         "components": { \
             "minecraft:repairable": { \
-            "items": "#minecraft:iron_tool_materials" \
+            "items": "#dimitris_smithing:repairs/shears" \
             } \
         } \
         } \
@@ -262,7 +619,7 @@ item modify entity @s [\
         "type": "minecraft:set_components", \
         "components": { \
             "minecraft:repairable": { \
-            "items": "#minecraft:iron_tool_materials" \
+            "items": "#dimitris_smithing:repairs/shield" \
             } \
         } \
         } \
@@ -293,7 +650,7 @@ item modify entity @s [\
         "type": "minecraft:set_components", \
         "components": { \
             "minecraft:repairable": { \
-            "items": "minecraft:string" \
+            "items": "#dimitris_smithing:repairs/bow" \
             } \
         } \
         } \
@@ -324,7 +681,7 @@ item modify entity @s [\
         "type": "minecraft:set_components", \
         "components": { \
             "minecraft:repairable": { \
-            "items": "minecraft:string" \
+            "items": "#dimitris_smithing:repairs/crossbow" \
             } \
         } \
         } \
@@ -355,7 +712,7 @@ item modify entity @s [\
         "type": "minecraft:set_components", \
         "components": { \
             "minecraft:repairable": { \
-            "items": "#dimitris_smithing:prismarine_materials" \
+            "items": "#dimitris_smithing:repairs/trident" \
             } \
         } \
         } \
