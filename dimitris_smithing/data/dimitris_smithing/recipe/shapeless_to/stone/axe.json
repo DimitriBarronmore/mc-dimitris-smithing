@@ -1,0 +1,10 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        ["minecraft:wooden_axe", "minecraft:stone_axe"],
+        "#minecraft:stone_tool_materials",
+        "#minecraft:stone_tool_materials",
+        "#minecraft:stone_tool_materials"
+    ],
+    "result": "minecraft:stone_axe"
+}

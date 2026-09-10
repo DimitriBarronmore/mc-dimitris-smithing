@@ -1,0 +1,9 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        ["minecraft:iron_hoe", "minecraft:golden_hoe", "minecraft:diamond_hoe"],
+        "#minecraft:diamond_tool_materials",
+        "#minecraft:diamond_tool_materials"
+    ],
+    "result": "minecraft:diamond_hoe"
+}

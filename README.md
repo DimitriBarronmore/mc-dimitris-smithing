@@ -4,11 +4,6 @@ Last major update: MC 26.2
 
 Inspired heavily by https://github.com/sisby-folk/tinkerers-smithing.
 
-> TODO: Finish before releasing
-> - Implement "shapeless upgrade" system using shapeless transmutation recipes that unset the damage and enchantment components
-> - Change "broken tool was repaired" predicates to not rely purely on the presence of the enchantment, because that doesn't work so well with shapeless repair
-> - For the sake of the crafting recipes, find a way to have "broken" tools stay their own ID
-
 ## Pack features:
 
 ### Repair Revamp
@@ -32,15 +27,13 @@ All of these materials, and the repair materials of other normal vanilla items c
 ### Tool Upgrading
 
 #### Shapeless Upgrades
-Most tools can upgraded to higher tiers using shapeless crafting recipes, requiring the same number of ingredients as it would take to normally craft the item. Doing this loses all enchantments from the item. It's essentially sacrificing the tool in exchange for not needing sticks or a crafting bench.
+Most tools can upgraded to higher tiers using shapeless crafting recipes, requiring the same number of ingredients as it would take to normally craft the item. Doing this loses all components from the item. It's essentially sacrificing the tool in exchange for not needing sticks or a crafting bench.
 
 - Wood -> Stone
 - Stone -> Copper / Iron / Gold
 - Copper -> Iron / Gold
 - Iron -> Diamond
 - Gold -> Diamond
-- Leather -> Copper / Chainmail / Gold
-- Chainmail -> Iron / Diamond
 
 Tools can also be shapelessly crafted with their own repair material in order to repair them back to full durability, still losing all enchantments.
 
@@ -50,7 +43,7 @@ Tools and armor can be changed to a different material in a smithing table while
 
 ### Broken Tools
 - Any named gear which would break will instead transmute into an identical-looking "broken" version until repaired on an anvil or with mending, similar to an elytra.
+    - Of note: Fishing rods are weird, and don't respond to advancement triggers the same way everything else does. Fishing rods will break at 5 or less durability remaining instead of 0.
 
 ### Minor Tweaks
 - The anvil's "prior work" penalty has been removed to make repairing tools long-term without mending more achievable.
-    - Of note: Fishing rods are weird, and don't respond to advancement triggers the same way everything else does. Fishing rods will break at 5 or less durability remaining instead of 0.

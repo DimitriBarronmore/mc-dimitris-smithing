@@ -1,0 +1,9 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        "minecraft:wooden_sword",
+        "#minecraft:planks",
+        "#minecraft:planks"
+    ],
+    "result": "minecraft:wooden_sword"
+}

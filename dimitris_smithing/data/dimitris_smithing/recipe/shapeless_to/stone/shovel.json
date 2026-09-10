@@ -1,0 +1,8 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        ["minecraft:wooden_shovel", "stone_shovel"],
+        "#minecraft:stone_tool_materials"
+    ],
+    "result": "minecraft:stone_shovel"
+}

@@ -1,0 +1,9 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        ["minecraft:wooden_hoe", "minecraft:stone_hoe"],
+        "#minecraft:stone_tool_materials",
+        "#minecraft:stone_tool_materials"
+    ],
+    "result": "minecraft:stone_hoe"
+}

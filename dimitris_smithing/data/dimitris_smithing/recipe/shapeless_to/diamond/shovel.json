@@ -1,0 +1,8 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        ["minecraft:iron_shovel", "minecraft:golden_shovel", "minecraft:diamond_shovel"],
+        "#minecraft:diamond_tool_materials"
+    ],
+    "result": "minecraft:diamond_shovel"
+}

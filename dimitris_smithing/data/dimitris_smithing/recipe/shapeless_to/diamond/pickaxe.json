@@ -1,0 +1,10 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        ["minecraft:iron_pickaxe", "minecraft:golden_pickaxe", "minecraft:diamond_pickaxe"],
+        "#minecraft:diamond_tool_materials",
+        "#minecraft:diamond_tool_materials",
+        "#minecraft:diamond_tool_materials"
+    ],
+    "result": "minecraft:diamond_pickaxe"
+}
