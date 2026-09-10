@@ -101,6 +101,7 @@ execute if data storage dbarr:tmp stored_components.minecraft:equippable run \
     equipment.mainhand.components.minecraft:equippable.asset_id set value "minecraft:pink_carpet"
 
 ## Add "broken" enchantment to the item, with no glint.
+## Also set up enchantment glint and non-stacking.
 item modify entity @n[type=mannequin,tag=dbtemp.current] weapon.mainhand { \
   "type": "minecraft:set_components", \
   "components": { \
@@ -108,6 +109,7 @@ item modify entity @n[type=mannequin,tag=dbtemp.current] weapon.mainhand { \
       "dimitris_smithing:broken": 1 \
     }, \
     "minecraft:enchantment_glint_override": false, \
+    "minecraft:max_stack_size": 1 \
   } \
 }
 
