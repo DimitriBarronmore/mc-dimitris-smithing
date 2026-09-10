@@ -1,3 +1,5 @@
+-- Not currently used, but might be useful again in the future.
+
 function write_file(delta)
     -- Advancements
     local txt = ([[
