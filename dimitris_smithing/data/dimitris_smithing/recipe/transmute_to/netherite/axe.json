@@ -1,0 +1,6 @@
+{
+    "type": "smithing_transform",
+    "base": "#minecraft:axes",
+    "addition": "minecraft:netherite_axe",
+    "result": "minecraft:netherite_axe"
+}

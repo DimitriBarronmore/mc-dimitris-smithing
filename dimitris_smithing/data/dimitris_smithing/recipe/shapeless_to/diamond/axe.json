@@ -1,0 +1,10 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        ["minecraft:iron_axe", "minecraft:golden_axe", "minecraft:diamond_axe"],
+        "#minecraft:diamond_tool_materials",
+        "#minecraft:diamond_tool_materials",
+        "#minecraft:diamond_tool_materials"
+    ],
+    "result": "minecraft:diamond_axe"
+}

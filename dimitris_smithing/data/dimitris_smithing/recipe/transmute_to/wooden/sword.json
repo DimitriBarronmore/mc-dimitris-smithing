@@ -1,0 +1,6 @@
+{
+    "type": "smithing_transform",
+    "base": "#minecraft:swords",
+    "addition": "minecraft:wooden_sword",
+    "result": "minecraft:wooden_sword"
+}

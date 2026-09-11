@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:any_of",
+  "terms": [
+    {
+      "type": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "minecraft:equipment": {
+          "mainhand": {
+            "predicates": {
+              "minecraft:enchantments": [
+                {
+                  "levels": {
+                    "min": 1,
+                    "max": 99
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "minecraft:equipment": {
+          "mainhand": {
+            "predicates": {
+              "minecraft:custom_name": {}
+            }
+          }
+        }
+      }
+    }
+  ]
+}

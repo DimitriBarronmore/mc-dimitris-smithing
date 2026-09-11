@@ -1,0 +1,6 @@
+{
+    "type": "smithing_transform",
+    "base": "#minecraft:chest_armor",
+    "addition": "minecraft:golden_chestplate",
+    "result": "minecraft:golden_chestplate"
+}

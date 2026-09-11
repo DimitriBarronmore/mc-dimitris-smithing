@@ -1,0 +1,6 @@
+{
+    "type": "smithing_transform",
+    "base": "#minecraft:axes",
+    "addition": "minecraft:copper_axe",
+    "result": "minecraft:copper_axe"
+}

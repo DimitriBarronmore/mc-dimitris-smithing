@@ -1,0 +1,6 @@
+{
+    "type": "smithing_transform",
+    "base": "#minecraft:head_armor",
+    "addition": "minecraft:diamond_helmet",
+    "result": "minecraft:diamond_helmet"
+}

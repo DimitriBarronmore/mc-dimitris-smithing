@@ -1,0 +1,10 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        ["minecraft:iron_pickaxe", "minecraft:stone_pickaxe", "minecraft:copper_pickaxe"],
+        "#minecraft:iron_tool_materials",
+        "#minecraft:iron_tool_materials",
+        "#minecraft:iron_tool_materials"
+    ],
+    "result": "minecraft:iron_pickaxe"
+}

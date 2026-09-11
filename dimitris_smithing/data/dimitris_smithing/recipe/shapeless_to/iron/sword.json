@@ -1,0 +1,9 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        ["minecraft:iron_sword", "minecraft:stone_sword", "minecraft:copper_sword"],
+        "#minecraft:iron_tool_materials",
+        "#minecraft:iron_tool_materials"
+    ],
+    "result": "minecraft:iron_sword"
+}

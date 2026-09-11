@@ -1,0 +1,6 @@
+{
+    "type": "smithing_transform",
+    "base": "#minecraft:swords",
+    "addition": "minecraft:diamond_sword",
+    "result": "minecraft:diamond_sword"
+}

@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:any_of",
+  "terms": [
+    {
+      "type": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "minecraft:equipment": {
+          "head": {
+            "predicates": {
+              "minecraft:enchantments": [
+                {
+                  "enchantments": "dimitris_smithing:broken",
+                  "levels": 1
+                }
+              ],
+              "minecraft:damage": {
+                "durability": {
+                  "min": 1
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}

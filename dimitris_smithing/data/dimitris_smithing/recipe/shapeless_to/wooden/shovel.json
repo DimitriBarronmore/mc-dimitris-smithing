@@ -1,0 +1,8 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        "minecraft:wooden_shovel",
+        "#minecraft:planks"
+    ],
+    "result": "minecraft:wooden_shovel"
+}

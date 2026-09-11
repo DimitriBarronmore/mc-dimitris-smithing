@@ -1,0 +1,9 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        "minecraft:wooden_hoe",
+        "#minecraft:planks",
+        "#minecraft:planks"
+    ],
+    "result": "minecraft:wooden_hoe"
+}

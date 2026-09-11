@@ -1,0 +1,6 @@
+{
+    "type": "smithing_transform",
+    "base": "#minecraft:chest_armor",
+    "addition": "minecraft:netherite_chestplate",
+    "result": "minecraft:netherite_chestplate"
+}

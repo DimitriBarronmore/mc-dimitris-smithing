@@ -1,0 +1,6 @@
+{
+    "type": "smithing_transform",
+    "base": "#minecraft:leg_armor",
+    "addition": "minecraft:golden_leggings",
+    "result": "minecraft:golden_leggings"
+}

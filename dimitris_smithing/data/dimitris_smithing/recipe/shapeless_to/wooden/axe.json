@@ -1,0 +1,10 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        "minecraft:wooden_axe",
+        "#minecraft:planks",
+        "#minecraft:planks",
+        "#minecraft:planks"
+    ],
+    "result": "minecraft:wooden_axe"
+}

@@ -1,0 +1,6 @@
+{
+    "type": "smithing_transform",
+    "base": "#minecraft:hoes",
+    "addition": "minecraft:diamond_hoe",
+    "result": "minecraft:diamond_hoe"
+}

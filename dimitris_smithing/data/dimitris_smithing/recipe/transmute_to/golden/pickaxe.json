@@ -1,0 +1,6 @@
+{
+    "type": "smithing_transform",
+    "base": "#minecraft:pickaxes",
+    "addition": "minecraft:golden_pickaxe",
+    "result": "minecraft:golden_pickaxe"
+}

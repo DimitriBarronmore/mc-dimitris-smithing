@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "nearly_broken": {
+      "trigger": "minecraft:item_durability_changed",
+      "conditions": {
+        "durability": {
+          "max": 0
+        },
+        "item": {
+          "items": "minecraft:copper_spear"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "dimitris_smithing:trigger_break/item_copper_spear"
+  }
+}

@@ -1,0 +1,9 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        ["minecraft:iron_sword", "minecraft:golden_sword", "minecraft:diamond_sword"],
+        "#minecraft:diamond_tool_materials",
+        "#minecraft:diamond_tool_materials"
+    ],
+    "result": "minecraft:diamond_sword"
+}

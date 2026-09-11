@@ -1,0 +1,6 @@
+{
+    "type": "smithing_transform",
+    "base": "#minecraft:foot_armor",
+    "addition": "minecraft:chainmail_boots",
+    "result": "minecraft:chainmail_boots"
+}

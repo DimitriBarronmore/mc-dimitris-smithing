@@ -1,20 +1,50 @@
 # Dimitri's Smithing
-A datapack for MC 1.20.10+ that rebalances crafting, keeping, upgrading, and repairing your gear.
+A datapack for Minecraft that rebalances crafting, keeping, upgrading, and repairing your gear.
+Last major update: MC 26.2
 
 Inspired heavily by https://github.com/sisby-folk/tinkerers-smithing.
 
 ## Pack features:
-- All tools can be repaired in an anvil using appropriate materials, including tools that can normally only be repaired through anvil combining.
-    - flint_and_steel = #minecraft:iron_tool_materials
-    - brush = minecraft:feather
-    - fishing_rod = minecraft:string
-    - carrot_on_a_stick = minecraft:carrot
-    - warped_fungus_on_a_stick = minecraft:warped_fungus
-    - shears = #minecraft:iron_tool_materials
-    - shield = #minecraft:iron_tool_materials
-    - bow = minecraft:string
-    - trident = #dbarr_tooltweak:prismarine_materials (prismarine crystals or shards)
-    - crossbow = minecraft:string
-- All gear can be upgraded to a higher tier by combining them in a smithing table with a sacrificial higher-tier item of the same type.
-- The anvil's "prior work" penalty is capped to be at most 15 levels to make repairing tools long-term without mending more achievable. (Make sure you put items on your cursor so they update.)
-- Any named gear which would break will instead transmute into an identical-looking "broken" version until repaired on an anvil or with mending, similar to an elytra.
+
+### Repair Revamp
+All items with durability can be repaired in an anvil using appropriate materials, including tools that can normally only be repaired through anvil combining. These are the defaults:
+
+- Netherite Tools = #minecraft:repairs_diamond_armor
+- Netherite Armor = #minecraft:repairs_diamond_armor
+- Flint and Steel = #minecraft:repairs_iron_armor
+- Brush = minecraft:feather
+- Fishing Rod = minecraft:string
+- Carrot on a Stick = minecraft:carrot
+- Warped Fungus on a Stick = minecraft:warped_fungus
+- Shears = #minecraft:repairs_iron_armor
+- Shield = #minecraft:repairs_iron_armor
+- Bow = minecraft:string
+- Trident = #dimitris_smithing:repairs/trident (prismarine crystals or shards)
+- Crossbow = minecraft:string
+
+All of these materials, and the repair materials of other normal vanilla items can be changed or added to by changing the tags under `#dimitris_smithing:repairs/*`.
+
+### Tool Upgrading
+
+#### Shapeless Upgrades
+Most tools can upgraded to higher tiers using shapeless crafting recipes, requiring the same number of ingredients as it would take to normally craft the item. Doing this loses all components from the item. It's essentially sacrificing the tool in exchange for not needing sticks or a crafting bench.
+
+- Wood -> Stone
+- Stone -> Copper / Iron / Gold
+- Copper -> Iron / Gold
+- Iron -> Diamond
+- Gold -> Diamond
+
+Tools can also be shapelessly crafted with their own repair material in order to repair them back to full durability, still losing all enchantments.
+
+#### Smithing Upgrades
+Tools and armor can be changed to a different material in a smithing table while retaining their enchantments, custom names, etc. using a "sacrificial" item of the same type and the desired material.
+
+### Broken Tools
+Any named gear which would break will instead transmute into an identical-looking "broken" version until repaired on an anvil or with mending, similar to an elytra.
+
+### Prior Work
+The anvil's "prior work" penalty has been removed to make repairing tools long-term without mending more achievable.
+
+## Notes:
+- Fishing rods are weird, and don't respond to advancement triggers the same way everything else does. Fishing rods will break at 5 or less durability remaining instead of 0.

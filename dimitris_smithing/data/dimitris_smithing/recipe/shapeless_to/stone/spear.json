@@ -1,0 +1,8 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        ["minecraft:wooden_spear", "minecraft:stone_spear"],
+        "#minecraft:stone_tool_materials"
+    ],
+    "result": "minecraft:stone_spear"
+}

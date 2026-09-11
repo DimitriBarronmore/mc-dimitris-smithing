@@ -1,0 +1,6 @@
+{
+    "type": "smithing_transform",
+    "base": "#minecraft:shovels",
+    "addition": "minecraft:diamond_shovel",
+    "result": "minecraft:diamond_shovel"
+}
