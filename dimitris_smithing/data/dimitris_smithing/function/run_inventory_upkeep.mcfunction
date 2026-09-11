@@ -1,3 +1,4 @@
 function dimitris_smithing:break_and_repair/try_repair
 function dimitris_smithing:ensure_repairable
 function dimitris_smithing:reset_repair_cost
+function dimitris_smithing:legacy_repair/repair_broken_1
