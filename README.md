@@ -40,10 +40,11 @@ Tools can also be shapelessly crafted with their own repair material in order to
 #### Smithing Upgrades
 Tools and armor can be changed to a different material in a smithing table while retaining their enchantments, custom names, etc. using a "sacrificial" item of the same type and the desired material.
 
-
 ### Broken Tools
-- Any named gear which would break will instead transmute into an identical-looking "broken" version until repaired on an anvil or with mending, similar to an elytra.
-    - Of note: Fishing rods are weird, and don't respond to advancement triggers the same way everything else does. Fishing rods will break at 5 or less durability remaining instead of 0.
+Any named gear which would break will instead transmute into an identical-looking "broken" version until repaired on an anvil or with mending, similar to an elytra.
 
-### Minor Tweaks
-- The anvil's "prior work" penalty has been removed to make repairing tools long-term without mending more achievable.
+### Prior Work
+The anvil's "prior work" penalty has been removed to make repairing tools long-term without mending more achievable.
+
+## Notes:
+- Fishing rods are weird, and don't respond to advancement triggers the same way everything else does. Fishing rods will break at 5 or less durability remaining instead of 0.
